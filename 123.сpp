@@ -18,4 +18,4 @@ public class Main {
         System.out.println("Заглавные буквы: " + uppercaseStr.toString());
         System.out.println("Строчные буквы: " + lowercaseStr.toString());
     }
-}
+
