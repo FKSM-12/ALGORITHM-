@@ -1,21 +1,15 @@
+import java.util.Stack;
+
 public class Main {
     public static void main(String[] args) {
-        String str_1 = "AaBbCcDd";
-        StringBuilder uppercaseStr = new StringBuilder();
-        StringBuilder lowercaseStr = new StringBuilder();
+        // создаем стек
+        Stack<Character> stack = new Stack<>();
         
-        // Получаем заглавные буквы (четные индексы: 0, 2, 4, 6)
-        for (int i = 0; i < str_1.length(); i += 2) {
-            uppercaseStr.append(str_1.charAt(i));
-        }
+        stack.push('q'); // добавляем элемент 'q' в стек
+        stack.push('l'); // добавляем элемент 'l' в стек
+        stack.push('w'); // добавляем элемент 'w' в стек
         
-        // Получаем строчные буквы (нечетные индексы: 1, 3, 5, 7)
-        for (int i = 1; i < str_1.length(); i += 2) {
-            lowercaseStr.append(str_1.charAt(i));
-        }
-        
-        // Выводим результаты
-        System.out.println("Заглавные буквы: " + uppercaseStr.toString());
-        System.out.println("Строчные буквы: " + lowercaseStr.toString());
+        // выводим все элементы стека
+        System.out.println(stack);
     }
-} 
+}
